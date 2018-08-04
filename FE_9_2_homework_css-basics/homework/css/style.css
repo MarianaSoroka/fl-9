@@ -1,0 +1,130 @@
+     @media print {
+     @page {
+         margin-top: 1.5cm;
+     }
+     /* .print version*/
+     body {
+         padding-top: 0;
+         padding-bottom: 10%;
+         background: transparent;
+     }
+     .tm-sidebar,
+     #about,
+     section:not(:first-of-type) {
+         display: none;
+     }
+     .tm-main-content {
+         margin: 0;
+         padding: 0;
+     }
+     /*.img/EPAM*/
+     .tm-banner {
+         padding: unset;
+         height: 200px;
+     }
+     .tm-content-box flex-2-col {
+         display: block;
+     }
+     .pad flex-item tm-team-description-container {
+         padding: 0 0 0 50px;
+         max-width: none;
+     }
+     .tm-section-title {
+         color: blue;
+     }
+     .flex-item {
+         text-align: center;
+     }
+ }
+ /*media */
+ 
+ @media screen {
+     .tm-section-title-box:hover {
+         cursor: default;
+         font-weight: 600;
+         background-color: burlywood;
+         font-variant: normal;
+         font-size: 3.5em;
+         color: deepskyblue;
+         font-style: italic;
+     }
+     .thumbnail {
+         border-radius: 50%;
+     }
+     p:first-letter {
+         color: #76cdd7;
+         font-size: 30px;
+     }
+     .tm-main-nav,
+     .tm-content-box {
+         background: white;
+         box-shadow: 0 0 10px black;
+         padding: 10px;
+     }
+     .tm-content-box {
+         position: relative;
+     }
+     .tm-content-box::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 0;
+         height: 0;
+         border-top: 22px solid dodgerblue;
+         border-right: 115px solid transparent;
+         z-index: 1;
+     }
+     h2.tm-section-title {
+         color: gainsboro;
+         letter-spacing: 5px;
+     }
+     h2 + p {
+         font-style: italic;
+     }
+     
+     
+     p.tm-section-description {
+         line-height: 2em;
+         text-indent: 1em;
+     }
+     .heading h2{
+         color: aqua;
+          text-align: center;
+     }
+     .pad ol a {
+         color: black;
+     }
+     .pad ol a:visited {
+         color: silver;
+     }
+     .pad ol a:hover {
+         color: darkcyan;
+     }
+    
+      .gallery-container .box:nth-child(odd){
+         background-color: darkgrey;
+      font-style: normal;
+    }
+     
+     .tm-nav-item :not(:last-child){
+        border-bottom: silver 3px dotted;
+    }
+       .mandatory-field::after {
+        content: "*";
+        color: red;
+    }
+ .submit-btn:hover {
+        color: snow;
+        background: blue;
+     font-style: oblique;
+      
+    }
+     .contact-form button{
+         color: red;
+     }
+    .form-group input{
+         color: red;
+     }
+     
+} 
